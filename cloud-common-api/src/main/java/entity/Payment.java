@@ -1,4 +1,4 @@
-package com.horace.entity;
+package entity;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -6,6 +6,11 @@ import lombok.NoArgsConstructor;
 
 import java.io.Serializable;
 
+/**
+ * 2022/2/25
+ * com.horace.entity
+ * horace
+ */
 @Data
 @NoArgsConstructor
 @AllArgsConstructor

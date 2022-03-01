@@ -1,4 +1,4 @@
-package com.horace.common;
+package common;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
