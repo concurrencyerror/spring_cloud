@@ -1,6 +1,6 @@
 package com.horace.service;
 
-import com.horace.entity.Payment;
+import entity.Payment;
 import org.apache.ibatis.annotations.Param;
 
 /**

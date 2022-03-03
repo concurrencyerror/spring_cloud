@@ -1,8 +1,8 @@
 package com.horace.service.impl;
 
 import com.horace.dao.PaymentDao;
-import com.horace.entity.Payment;
 import com.horace.service.PaymentService;
+import entity.Payment;
 import org.springframework.stereotype.Service;
 
 /**

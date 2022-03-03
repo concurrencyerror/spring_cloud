@@ -1,8 +1,8 @@
 package com.horace.controller;
 
-import com.horace.common.CommonResult;
-import com.horace.entity.Payment;
 import com.horace.service.PaymentService;
+import common.CommonResult;
+import entity.Payment;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.*;
 
