@@ -3,9 +3,9 @@ server:
 
 eureka:
   instance:
-    hostname: e7001.com
+    hostname: localhost
   client:
     register-with-eureka: false
     fetch-registry: false
     service-url:
-      defaultZone: http://e7002:7002/eureka/
+      defaultZone: http://localhost:7001/eureka/
