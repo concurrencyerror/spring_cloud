@@ -45,7 +45,8 @@ public class PaymentController {
     }
 
     @GetMapping( "/payment/get/{id}" )
-    public CommonResult<Payment> getPaymentById(@PathVariable Long id) {
+    public CommonResult<Payment> getPaymentById(@PathVariable Long id) throws InterruptedException {
+        Thread.sleep(3000);
         Payment payment = paymentService.getPaymentById(id);
         return new CommonResult<>(200, "查询成功,端口" + port, payment);
     }

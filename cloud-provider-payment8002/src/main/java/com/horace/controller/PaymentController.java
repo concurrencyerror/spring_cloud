@@ -20,7 +20,7 @@ public class PaymentController {
         this.paymentService = paymentService;
     }
 
-    @PostMapping( "/payment/create" )
+    @PostMapping("/payment/create")
     public CommonResult<Payment> create(@RequestBody Payment payment) {
         int result = paymentService.create(payment);
         log.info("----------插入结果---------{}", result);
@@ -31,7 +31,7 @@ public class PaymentController {
         }
     }
 
-    @GetMapping( "/payment/get/{id}" )
+    @GetMapping("/payment/get/{id}")
     public CommonResult<Payment> getPaymentById(@PathVariable Long id) {
         Payment payment = paymentService.getPaymentById(id);
         return new CommonResult<>(200, "查询成功", payment);
