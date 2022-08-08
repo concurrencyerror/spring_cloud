@@ -29,11 +29,11 @@ public class PaymentService {
      * @return
      */
     @HystrixCommand(fallbackMethod = "paymentFallback", commandProperties = {
-            @HystrixProperty(name = "execution.isolation.thread.timeoutInMillisecond", value = "3000")
+            @HystrixProperty(name = "execution.isolation.thread.timeoutInMilliseconds", value = "3000")
     })
     public String paymentInfoTimeOut(Integer id) {
         try {
-            Thread.sleep(3000);
+            Thread.sleep(5000);
         } catch (InterruptedException e) {
             e.printStackTrace();
         }
