@@ -22,6 +22,7 @@
         <module>cloud-provider-hystrix-payment</module>
         <module>cloud-consumer-openfegin-hystrix-order80</module>
         <module>cloud-gateway</module>
+        <module>cloud-config</module>
     </modules>
 
     <properties>
